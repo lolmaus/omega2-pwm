@@ -1,12 +1,12 @@
 # Omega2 PWM
-This is simple program to control hardware PWM on Omega2. For some reason Omega2 has not any util to control **hardware** PWM. There is only **fast-gpio** tool, it uses software PWM which is awful for sound generation.
+This is a simple program to control hardware PWM on Omega2. For some reason, Omega2 doesn't have any util to control **hardware** PWM. There is only the **fast-gpio** tool, it uses software PWM which is awful for sound generation.
 
 
 ## Usage
 
 Channel #0 is pin #18, channel #1 is pin #19. Channels #2 and #3 are available on Omega2S only (UART2 pins).
 
-Before usage you must set GPIO muxing using **omega2-ctrl** tool:
+Before usage, you must set GPIO muxing using **omega2-ctrl** tool:
 
     omega2-ctrl gpiomux set pwm0 pwm
     
